@@ -37,7 +37,7 @@ body {
 
 .social__card {
   display: grid;
-  width: 300px;
+  width: 400px;
   border-radius: 9px;
   gap: 1rem;
   padding: 1.5rem;
