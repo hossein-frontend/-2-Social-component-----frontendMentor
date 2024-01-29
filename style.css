@@ -1,0 +1,95 @@
+/* -------------------------------------------------------------------------- */
+/*                                  CSS RESET                                 */
+/* -------------------------------------------------------------------------- */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  min-height: 100vh;
+  font-family: "Inter", sans-serif;
+  place-content: center;
+  background-color: var(--black);
+  font-size: 1.4rem;
+  position: relative;
+  font-weight: 400;
+}
+
+:root {
+  --green: hsl(75, 94%, 57%);
+  --grey: hsl(0, 0%, 20%);
+  --white: hsl(0, 0%, 100%);
+  --dark-grey: hsl(0, 0%, 12%);
+  --black: hsl(0, 0%, 8%);
+}
+/* ------------------------------ END OF STYLE ------------------------------ */
+
+.social__card {
+  display: grid;
+  width: 300px;
+  border-radius: 9px;
+  gap: 1rem;
+  padding: 1.5rem;
+  place-items: center;
+  justify-items: center;
+  color: var(--white);
+  background-color: var(--dark-grey);
+}
+
+.social__image {
+  width: 10rem;
+  border-radius: 100vw;
+  aspect-ratio: 1/1;
+}
+.social__list {
+  list-style-type: none;
+  display: grid;
+  grid-auto-columns: 100%;
+  place-content: center;
+  gap: 2rem;
+  width: 100%;
+}
+.attribution {
+  position: absolute;
+  inset: auto 0 0 0;
+  text-align: center;
+  background-color: var(--green);
+}
+.social__item {
+  width: 90%;
+  margin: auto;
+}
+.social__item > a {
+  color: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 1rem 2rem;
+  background-color: var(--grey);
+  border-radius: 9px;
+  font-weight: bold;
+  transition: 0.6s;
+}
+a:hover {
+  background-color: var(--green);
+  color: var(--black);
+}
+.subheading {
+  color: var(--green);
+  font-weight: 500;
+  margin-bottom: 1rem;
+}
+.social__description {
+  margin-bottom: 2rem;
+}
